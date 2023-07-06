@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Setting the viewport enables you to control the width and scaling of the viewport ie. for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title and description are important for SEO. And <title> is what is rendered in the browser tab name. -->
+    <title>Annotate Me!</title>
+    <meta name="description" content="The site for annotating some awesome GIFs">
+    <link rel="icon" type="image/png" href="images/oscar-icon.png">
+
+    <!-- Our JS File -->
+    <script src="scripts.js"></script>
+
+    <!-- Our CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                Annotate Me!
+            </h1>
+            <h2>
+                Huzzah! This is exciting!
+            </h2>
+            <p>
+                Please look at the GIF to the right and try to describe the scene in the box below. If you're feeling a bit lost, you can look at some examples <a href="https://docs.google.com/presentation/d/14E-C0ONv7iJo1xtFqBlOrcJhxIP4ZHmR_5o1D3NcpVo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>. If you're curious about why we're doing this, click here.
+            </p>
+            <p>
+                <textarea id="annotation" rows="10" cols="60" placeholder="Describe the scene here..."></textarea>
+            </p>
+            <!-- submit-link should take the text in textarea and save it to a Google Sheet -->
+            <div class="submit-link">
+                <!-- <a href="https://github.com/margueriteroth/our-project-starter" target="_blank"
+                    rel="noopener noreferrer">
+                    <button onclick="sendData()">
+                        Done. Give me more!
+                    </button>
+                </a> -->
+                <!-- button that calls sendData after pressing -->
+                <button onclick="sendData()">
+                    Done. Give me more!
+                </button>
+            </div>
+        </div>
+        <div class="graphic">
+            <img id="labeling-image" class="celebration-gif" src="https://media.giphy.com/media/3o7aD420hpFU1ykrzW/giphy.gif" alt="Exciting SEGA karate chop gif courtesy of She's All That" />
+        </div>
+    </div>
+</body>
+ <!-- Link your scripts.js here if using d3.js after the DOM has loaded to allow element targeting. -->
+</html>
