@@ -41,11 +41,16 @@
                     </button>
                 </a> -->
                 <!-- button that calls sendData after pressing -->
-                <button onclick="sendData()">
+                <button id="more-images" onclick="sendData()">
                     Done. Give me more!
+                </button>
+                <p></p>
+                <button id="next-image" onclick="getNextImage()">
+                    Show me the GIFs!
                 </button>
             </div>
         </div>
+        <!-- populate the gif from a local folder, or a cluster folder? -->
         <div class="graphic">
             <img id="labeling-image" class="celebration-gif" src="https://media.giphy.com/media/3o7aD420hpFU1ykrzW/giphy.gif" alt="Exciting SEGA karate chop gif courtesy of She's All That" />
         </div>
