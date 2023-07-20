@@ -1,3 +1,10 @@
 {
-    "logLevel": 2
+    "logLevel": 2,
+    "liveServer.settings.https":   
+    {
+    "enable": true,
+    "cert": "/home/julia/Documents/h_coarse_loc/data_website/host.crt",
+    "key": "/home/julia/Documents/h_coarse_loc/data_website/host.key",
+    "passphrase": "12345"
+    }  
 }

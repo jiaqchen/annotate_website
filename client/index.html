@@ -27,7 +27,7 @@
                 Huzzah! This is exciting!
             </h2>
             <p>
-                Please look at the GIF to the right and try to describe the scene in the box below. If you're feeling a bit lost, you can look at some examples <a href="https://docs.google.com/presentation/d/14E-C0ONv7iJo1xtFqBlOrcJhxIP4ZHmR_5o1D3NcpVo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>. If you're curious about why we're doing this, click here.
+                Please look at the GIF to the right and try to describe the scene in the box below. If you're feeling a bit lost, you can look at some examples <a href="https://docs.google.com/presentation/d/14E-C0ONv7iJo1xtFqBlOrcJhxIP4ZHmR_5o1D3NcpVo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>. If you're curious about why we're doing this, click here [link coming soon].
             </p>
             <p>
                 <textarea id="annotation" rows="10" cols="60" placeholder="Describe the scene here..."></textarea>
@@ -41,7 +41,7 @@
                     </button>
                 </a> -->
                 <!-- button that calls sendData after pressing -->
-                <button id="more-images" onclick="sendData()">
+                <button id="submit-button" onclick="sendData()">
                     Done. Give me more!
                 </button>
                 <p></p>
@@ -50,9 +50,9 @@
                 </button>
             </div>
         </div>
-        <!-- populate the gif from a local folder, or a cluster folder? -->
+        <!-- make size of gif larger -->
         <div class="graphic">
-            <img id="labeling-image" class="celebration-gif" src="https://media.giphy.com/media/3o7aD420hpFU1ykrzW/giphy.gif" alt="Exciting SEGA karate chop gif courtesy of She's All That" />
+            <img id="labeling-image" class="celebration-gif" />
         </div>
     </div>
 </body>
